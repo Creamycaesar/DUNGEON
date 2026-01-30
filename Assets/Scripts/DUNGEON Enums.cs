@@ -25,28 +25,54 @@ namespace DUNGEON.Data
         Neck
     }
 
-    // Types of damage for combat calculations
+    // D&D 5e Standard Damage Types
     public enum DamageType
     {
-        Physical,
-        Fire,
-        Ice,
-        Poison,
-        Arcane,
-        Holy
+        Slashing,    // Swords, Axes
+        Piercing,    // Spears, Arrows, Spikes
+        Bludgeoning, // Hammers, Falling rocks, Falls
+        Acid,        // Corrosive
+        Cold,        // Ice
+        Fire,        // Flames
+        Force,       // Pure magical energy
+        Lightning,   // Electricity
+        Necrotic,    // Wither, death energy
+        Poison,      // Toxins
+        Psychic,     // Mental damage
+        Radiant,     // Holy light
+        Thunder      // Sonic boom/shockwaves
     }
 
-    // For traps and consumables
+    // D&D 5e Conditions + Utility Effects
     public enum EffectType
     {
         None,
+
+        // --- Instant Effects ---
         HealHP,
         RestoreMana,
-        ApplyPoison,
-        ApplyBurn,
-        Stun,
         Teleport,
-        Rooted,     // User added: For Webs
-        Confused    // Good for mushrooms/hallucinations
+
+        // --- D&D 5e Conditions ---
+        Blinded,        // Can't see, Disadvantage on attacks
+        Charmed,        // Can't hurt charmer, charmer has advantage socially
+        Deafened,       // Can't hear
+        Exhaustion,     // 6 levels of debuffs ending in death
+        Frightened,     // Disadvantage while source is visible, can't move closer
+        Grappled,       // Speed 0
+        Incapacitated,  // No actions or reactions
+        Invisible,      // Advantage on attacks, Disadvantage to be hit
+        Paralyzed,      // Incapacitated, auto-fail STR/DEX saves, attacks against are Crits
+        Petrified,      // Stone, resistance to all damage
+        Poisoned,       // Disadvantage on attacks and ability checks
+        Prone,          // Lying down, crawl speed
+        Restrained,     // Speed 0, Disadvantage on attacks, Advantage to be hit (Good for Webs)
+        Stunned,        // Incapacitated, can't move, fail STR/DEX saves
+        Unconscious,    // Asleep/Knocked out
+
+        // --- Custom/Legacy ---
+        Burning,        // DOT (Damage Over Time)
+        Bleeding,       // DOT (Damage Over Time)
+        Confused        // Random actions
     }
 }

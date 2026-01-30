@@ -7,9 +7,16 @@ namespace DUNGEON.Data
     {
         [Header("Visuals")]
         public string trapName;
-        public GameObject trapPrefab;  // The actual object spawned in the world
-        public Sprite hiddenSprite;    // What it looks like before spotted
-        public Sprite revealedSprite;  // What it looks like after spotting
+        public GameObject trapPrefab;  // The prefab with the "Active/Spikes" sprite on it
+
+        [Tooltip("If TRUE, the trap starts invisible (showing the Floor Tilemap underneath). If FALSE, it uses the specific sprite below.")]
+        public bool useFloorAsDisguise = true;
+
+        [Tooltip("Only needed if you want a specific 'fake' look (like a cracked stone) instead of invisible.")]
+        public Sprite specificHiddenSprite;
+
+        [Tooltip("Optional. Only needed if the Prefab doesn't already have the correct 'Sprung' sprite.")]
+        public Sprite revealedSprite;
 
         [Tooltip("Controller for Spikes extending, Gas venting, etc.")]
         public RuntimeAnimatorController trapAnimator;
@@ -23,7 +30,7 @@ namespace DUNGEON.Data
         public DamageType damageType;
         public int minDamage;
         public int maxDamage;
-        public EffectType statusEffect; // e.g., Poison the player
+        public EffectType statusEffect;
         public int statusDuration;
 
         [Header("Trigger Logic")]
