@@ -2,6 +2,51 @@ using UnityEngine;
 
 namespace DUNGEON.Data
 {
+    // D&D 5e Core Attributes
+    public enum StatAttribute
+    {
+        Strength,       // Athletics, Attack Rolls (Melee)
+        Dexterity,      // Acrobatics, Stealth, Attack Rolls (Ranged/Finesse), AC
+        Constitution,   // HP, Concentration
+        Intelligence,   // Arcana, History, Investigation
+        Wisdom,         // Perception, Medicine, Survival
+        Charisma        // Persuasion, Intimidation
+    }
+
+    // D&D 5e Standard Skills
+    public enum Skill
+    {
+        None,
+
+        // Strength
+        Athletics,
+
+        // Dexterity
+        Acrobatics,
+        SleightOfHand,
+        Stealth,
+
+        // Intelligence
+        Arcana,
+        History,
+        Investigation,
+        Nature,
+        Religion,
+
+        // Wisdom
+        AnimalHandling,
+        Insight,
+        Medicine,
+        Perception,
+        Survival,
+
+        // Charisma
+        Deception,
+        Intimidation,
+        Performance,
+        Persuasion
+    }
+
     // Defines the broad category of an item
     public enum ItemType
     {
@@ -9,6 +54,7 @@ namespace DUNGEON.Data
         Weapon,     // Swords, Axes, Bows
         Armor,      // Chestplates, Helmets
         Consumable, // Potions, Food, Scrolls, Mushrooms
+        Accessory,  // Rings & Necklaces
         Key         // Quest items, Door keys
     }
 
@@ -66,13 +112,22 @@ namespace DUNGEON.Data
         Petrified,      // Stone, resistance to all damage
         Poisoned,       // Disadvantage on attacks and ability checks
         Prone,          // Lying down, crawl speed
-        Restrained,     // Speed 0, Disadvantage on attacks, Advantage to be hit (Good for Webs)
+        Restrained,     // Speed 0, Disadvantage on attacks, Advantage to be hit (Good for Webs/Pits)
         Stunned,        // Incapacitated, can't move, fail STR/DEX saves
         Unconscious,    // Asleep/Knocked out
 
         // --- Custom/Legacy ---
         Burning,        // DOT (Damage Over Time)
         Bleeding,       // DOT (Damage Over Time)
-        Confused        // Random actions
+        Confused,        // Random actions
+        // --- Actions/Attacks ---
+        ConeBreath,     // Potion of Fire Breath
+
+        // --- Buffs ---
+        BuffStat,       // Hill Giant Strength (Set Stat)
+        BuffDamage,     // Potion of Pugilism (+Damage on hit)
+        GrantResistance,// Potion of Resistance
+        FreeAction,     // Immunity to Restrained/Paralyzed/Difficult Terrain
+        WaterBreathing  // Water breathing
     }
 }

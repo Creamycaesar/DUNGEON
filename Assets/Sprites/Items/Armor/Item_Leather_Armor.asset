@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e30107fec8a02a4a96d9b8718fa27e3, type: 3}
+  m_Name: Item_Leather_Armor
+  m_EditorClassIdentifier: Assembly-CSharp::DUNGEON.Data.ArmorSO
+  itemName: Leather Armor
+  description: 
+  icon: {fileID: -45245721873732771, guid: e20a3d59d46ae3f48b53a602cff87d96, type: 3}
+  itemType: 2
+  hasShineAnimation: 0
+  animator: {fileID: 0}
+  goldValue: 10
+  isStackable: 0
+  maxStackSize: 1
+  equipSlot: 2
+  baseArmorClass: 11
+  armorCategory: 0
+  strengthRequirement: 0
+  stealthDisadvantage: 0

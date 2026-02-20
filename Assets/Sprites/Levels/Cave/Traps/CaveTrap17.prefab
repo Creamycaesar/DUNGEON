@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8959552680985783851}
   - component: {fileID: 6240280808845542429}
   - component: {fileID: 306147059443134138}
+  - component: {fileID: 6680129538675793915}
   m_Layer: 0
   m_Name: CaveTrap17
   m_TagString: Untagged
@@ -138,3 +139,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6680129538675793915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560736828212588308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5242683944dd760408cfad123c73816e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DUNGEON.Data.PlacementConfig
+  validLocation: 0
+  isWalkable: 1

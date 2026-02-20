@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2019796097870015716}
   - component: {fileID: 2772784307369979207}
   - component: {fileID: 6718159419244450090}
+  - component: {fileID: 7376339856389931545}
   m_Layer: 0
   m_Name: DungeonTrap6
   m_TagString: Untagged
@@ -138,3 +139,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7376339856389931545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776467200964670040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5242683944dd760408cfad123c73816e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DUNGEON.Data.PlacementConfig
+  validLocation: 0
+  isWalkable: 1

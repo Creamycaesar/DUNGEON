@@ -20,11 +20,16 @@ MonoBehaviour:
   trapAnimator: {fileID: 0}
   isHiddenByDefault: 1
   detectionDifficulty: 10
+  saveAttribute: 1
+  saveDC: 10
+  successfulSaveNegatesDamage: 0
   damageType: 1
   minDamage: 4
   maxDamage: 8
-  statusEffect: 20
-  statusDuration: 6
+  statusEffect: 0
+  statusDuration: 0
+  escapeDC: 0
+  escapeAttribute: 0
   triggerOnStep: 1
   isPeriodic: 0
   periodTurns: 0
